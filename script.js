@@ -9,13 +9,12 @@
 const navbar = document.querySelector("header");
 const navItems = document.querySelectorAll(".nav-links a");
 const navLinks = document.querySelector(".nav-links");
+const mobileMenuLinks = document.querySelectorAll(".mobile-menu a");
 
-navItems.forEach(link => {
-    link.addEventListener("click", () => {
-        if(navLinks){
-            navLinks.classList.remove("show");
-        }
-    });
+mobileMenuLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    closeMenu();
+  });
 });
 /* ==========================
    NAVBAR SCROLL EFFECT
