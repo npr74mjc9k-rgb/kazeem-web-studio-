@@ -296,20 +296,20 @@ header{
 
   border:1px solid rgba(212,175,55,.12);
 
-  border-radius:18px;
+  border-radius:16px;
 
-  padding:20px;
+  padding:18px;
 }
 
 .stat-card h2{
   color:var(--gold);
   font-family:"Space Grotesk",sans-serif;
-  font-size:30px;
+  font-size:25px;
 }
 
 .stat-card p{
   color:#999;
-  font-size:14px;
+  font-size:13px;
   margin-top:6px;
 }
 
@@ -317,10 +317,10 @@ header{
 
 .hero-image{
   position:relative;
-
   display:flex;
   justify-content:center;
   align-items:center;
+  padding-bottom:80px;
 }
 
 .glow-circle{
@@ -352,53 +352,44 @@ header{
   box-shadow:0 30px 70px rgba(0,0,0,.45);
 }
 
-/* FLOATING PROJECT */
+/* ===== HERO FLOATING PROJECT (FIXED) ===== */
 
 .floating-project{
   position:absolute;
-
-  bottom:-18px;
   left:50%;
   transform:translateX(-50%);
+  bottom:-28px;
 
-  width:235px;
+  width:220px;
+  padding:14px 16px;
 
   display:flex;
   align-items:center;
   gap:12px;
 
-  padding:14px;
-
-  background:rgba(18,18,18,.95);
+  background:rgba(15,15,15,.96);
   backdrop-filter:blur(18px);
 
-  border:1px solid rgba(212,175,55,.18);
-
+  border:1px solid rgba(212,175,55,.2);
   border-radius:18px;
 
+  box-shadow:0 16px 35px rgba(0,0,0,.45);
   z-index:5;
 }
 
-.project-icon i{
-  color:var(--gold);
-  font-size:22px;
-}
-
 .project-info small{
-  display:block;
-  color:#888;
+  color:#8f8f8f;
   font-size:11px;
 }
 
 .project-info strong{
-  display:block;
+  color:#fff;
   font-size:14px;
-  margin:2px 0;
 }
 
 .project-info span{
+  color:#a9a9a9;
   font-size:12px;
-  color:#AAA;
 }
 
 /* ==========================
@@ -427,10 +418,11 @@ header{
 
   .hero{
     grid-template-columns:1fr;
-    gap:44px;
+    gap:34px;
     text-align:center;
-    padding-top:105px;
-  }
+    padding-top:70px;
+    min-height:auto;
+}
 
   .hero-content{
     display:flex;
@@ -439,10 +431,11 @@ header{
   }
 
   .hero h1{
-    font-size:36px;
-    line-height:1.15;
-    letter-spacing:-1px;
-  }
+    font-size:34px;
+    line-height:1.18;
+    letter-spacing:-0.5px;
+    max-width:340px;
+}
 
   .hero p{
     font-size:16px;
@@ -497,6 +490,8 @@ header{
   grid-template-columns:1fr 1fr;
   gap:56px;
   align-items:center;
+
+  margin-top:40px;
 }
 
 .section-tag{
@@ -1117,8 +1112,8 @@ header{
 
 .floating-whatsapp{
   position:fixed;
-  bottom:20px;
-  right:18px;
+  bottom:15px;
+  right:15px;
 
   width:56px;
   height:56px;
