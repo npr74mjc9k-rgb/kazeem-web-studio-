@@ -151,11 +151,19 @@ if (window.innerWidth > 900) {
 
 } else {
 
-  glow.style.display = "none";
+  // Keep the glow visible on phones
+  glow.style.display = "block";
+
+  window.addEventListener("touchstart", (e) => {
+    const touch = e.touches[0];
+    glow.style.left = touch.clientX + "px";
+    glow.style.top = touch.clientY + "px";
+  });
+
+  window.addEventListener("touchmove", (e) => {
+    const touch = e.touches[0];
+    glow.style.left = touch.clientX + "px";
+    glow.style.top = touch.clientY + "px";
+  });
 
 }
-window.addEventListener("touchstart", (e) => {
-  const touch = e.touches[0];
-  glow.style.left = touch.clientX + "px";
-  glow.style.top = touch.clientY + "px";
-});
