@@ -392,7 +392,7 @@ header{
 .floating-project{
   position:absolute;
 
-  bottom:-25px;
+  bottom:-35px;
   left:50%;
   transform:translateX(-50%);
 
@@ -535,7 +535,7 @@ header{
   /* Image */
 
   .hero-image{
-    padding-bottom:80px;
+    padding-bottom:105px;
   }
 
   .hero-image img{
