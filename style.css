@@ -1280,19 +1280,26 @@ header{
 
 .cursor-glow{
   position:fixed;
+  top:0;
+  left:0;
+
   width:220px;
   height:220px;
   border-radius:50%;
 
   background:radial-gradient(circle,
-      rgba(212,175,55,.14),
-      transparent 70%);
+      rgba(212,175,55,.22),
+      rgba(212,175,55,.08) 40%,
+      transparent 75%);
 
-  filter:blur(35px);
+  filter:blur(45px);
 
   pointer-events:none;
   transform:translate(-50%,-50%);
-  z-index:0;
+
+  z-index:9997;          /* Put it above the page */
+  opacity:1;
+  transition:transform .05s linear;
 }
 
 /* ---------- LOADER ---------- */

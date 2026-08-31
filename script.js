@@ -154,3 +154,8 @@ if (window.innerWidth > 900) {
   glow.style.display = "none";
 
 }
+window.addEventListener("touchstart", (e) => {
+  const touch = e.touches[0];
+  glow.style.left = touch.clientX + "px";
+  glow.style.top = touch.clientY + "px";
+});
