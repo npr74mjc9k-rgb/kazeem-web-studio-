@@ -1574,3 +1574,95 @@ header.scrolled{
   }
 
 }
+/* =========================================
+   FINAL PREMIUM SPACING (SAFE)
+   iPhone breathing space only
+========================================= */
+
+@media (max-width:900px){
+
+  /* Every section gets clean spacing */
+  section{
+    width:92%;
+    padding:85px 0;
+  }
+
+  /* Space below fixed navbar */
+  .hero{
+    padding-top:140px;
+    padding-bottom:85px;
+  }
+
+  /* Space between section title and content */
+  .services-heading,
+  .portfolio-heading,
+  .pricing-heading{
+    margin-bottom:36px;
+  }
+
+  /* ABOUT */
+  .about{
+    gap:42px;
+  }
+
+  /* SERVICES */
+  .services-grid{
+    gap:20px;
+  }
+
+  .service-card{
+    padding:24px 20px;
+  }
+
+  /* PORTFOLIO */
+  .portfolio{
+    padding-top:95px;
+    padding-bottom:85px;
+  }
+
+  .portfolio-grid{
+    gap:28px;
+  }
+
+  .portfolio-card{
+    margin:0;
+  }
+
+  .portfolio-content{
+    padding:22px 20px 24px;
+  }
+
+  .tech-stack{
+    margin:18px 0 22px;
+  }
+
+  /* PRICING */
+  .pricing-grid{
+    gap:22px;
+  }
+
+  .price-card{
+    padding:26px 22px;
+  }
+
+  /* FAQ */
+  .faq-container{
+    gap:18px;
+  }
+
+  /* CONTACT */
+  .contact{
+    gap:42px;
+  }
+
+  .contact-form{
+    gap:18px;
+  }
+
+  /* FOOTER */
+  .footer{
+    margin-top:70px;
+    padding:50px 20px 30px;
+  }
+
+}
