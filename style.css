@@ -1666,3 +1666,27 @@ header.scrolled{
   }
 
 }
+/* ==========================================
+   STORIES LAGOS PORTFOLIO IMAGE
+========================================== */
+
+.portfolio-card .portfolio-image img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    display:block;
+    transition:transform .5s ease;
+}
+
+.portfolio-card:hover .portfolio-image img{
+    transform:scale(1.05);
+}
+
+/* Slight gold accent for restaurant project */
+
+.portfolio-card .portfolio-content span{
+    color:#D4AF37;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:1px;
+}
